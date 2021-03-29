@@ -11,7 +11,11 @@
   
   ![легендаП](https://github.com/YurchenokMaxim/lab4/blob/main/%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0R.png)
   
+  ***График точности***
+  
   ![график 1.1](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_categorical_accuracyR.svg)
+  
+  ***График потерь***
   
   ![график 1.2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossR.svg)
   
@@ -21,7 +25,11 @@
   
   ![легендаЯК](https://github.com/YurchenokMaxim/lab4/blob/main/%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0CB.png)
   
+  ***График точности***
+  
   ![график 2.1](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_categorical_accuracyCB.svg)
+  
+  ***График потерь***
   
   ![график 2.2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossCB.svg)
   
@@ -31,7 +39,11 @@
   
   ![легендаИ](https://github.com/YurchenokMaxim/lab4/blob/main/%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0P.png)
   
+  ***График точности***
+  
   ![график 3.1](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_categorical_accuracyP.svg)
+  
+  ***График потерь***
   
   ![график 3.2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossP.svg)
   
@@ -39,9 +51,22 @@
   
   *Легенда*
   
+  stddev- значение среднеквадратичного отклонения добавляемого шума.
+  
+  1. stddev=0.5 тренировка
+  2. stddev=0.5 валидация
+  3. stddev=0.7 тренировка
+  4. stddev=0.7 валидация
+  5. stddev=0.3 тренировка
+  6. stddev=0.3 валидация
+  
   ![легендаГ](https://github.com/YurchenokMaxim/lab4/blob/main/%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0G.png)
   
+  ***График точности***
+  
   ![график 4.1](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_categorical_accuracyG.svg)
+  
+  ***График потерь***
   
   ![график 4.2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossG.svg)
   
