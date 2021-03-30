@@ -34,7 +34,7 @@
   ***Случай манипуляций с яркостью и контрастом***
   
   ![контраст](https://github.com/YurchenokMaxim/lab4/blob/main/2.png)
-  ![]()
+  ![яркость](https://github.com/YurchenokMaxim/lab4/blob/main/6.png)
   
   *Легенда*
   
