@@ -56,7 +56,7 @@ img_gauss =keras.Sequential(
 img_Crop =keras.Sequential(
    [
    tf.keras.layers.experimental.preprocessing.RandomCrop(
-    height=100, width=100, seed=None, name=None
+    height=241, width=241, seed=None, name=None
    )
    ]
 )
@@ -68,7 +68,7 @@ def parse_proto_example(proto):
   example = tf.io.parse_single_example(proto, keys_to_features)
   example['image'] = tf.image.decode_jpeg(example['image/encoded'], channels=3)
   example['image'] = tf.image.convert_image_dtype(example['image'], dtype=tf.uint8)
-  example['image'] = tf.image.resize(example['image'], tf.constant([270, 270]))
+  example['image'] = tf.image.resize(example['image'], tf.constant([341, 341]))
   return example['image'], tf.one_hot(example['image/label'], depth=NUM_CLASSES)
 
 
