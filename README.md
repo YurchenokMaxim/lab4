@@ -127,11 +127,11 @@
   
   ***График точности***
   
-  ![итог1]()
+  ![итог1](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_categorical_accuracyFinish.svg)
   
   ***График потерь***
   
-  ![итог2]()
+  ![итог2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossFinish.svg)
   
   ***Анализ данных.***
   
