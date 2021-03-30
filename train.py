@@ -90,7 +90,6 @@ def build_model():
   model = img_contrast(inputs)
   model = img_gauss(inputs)
   model = img_Crop(inputs)
-  model = tf.keras.layers.experimental.preprocessing.Resizing(224,224)(model)
   model = EfficientNetB0(include_top=False, input_tensor=inputs, weights='imagenet')
   model.trainable=False
   model = tf.keras.layers.GlobalAveragePooling2D()(model.output)
