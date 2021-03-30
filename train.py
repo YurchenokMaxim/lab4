@@ -56,7 +56,7 @@ img_gauss =keras.Sequential(
 img_Crop =keras.Sequential(
    [
    tf.keras.layers.experimental.preprocessing.RandomCrop(
-    height=15, width=15, seed=None, name=None
+    height=100, width=100, seed=None, name=None
    )
    ]
 )
