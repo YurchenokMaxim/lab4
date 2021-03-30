@@ -108,4 +108,14 @@
   ![реализация](https://github.com/YurchenokMaxim/lab4/blob/main/5.png)
   
   
+  
+  ***График точности***
+  
+  ![итог1](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_categorical_accuracyAll.svg)
+  
+  ***График потерь***
+  
+  ![итог2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossAll.svg)
+  
+  
   ***Анализ данных.***
