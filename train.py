@@ -87,9 +87,9 @@ def create_dataset(filenames, batch_size):
 def build_model():
   inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3))
   model = img_rotate(inputs)
-  model = img_contrast(inputs)
-  model = img_gauss(inputs)
-  model = img_Crop(inputs)
+  model = img_contrast(model)
+  model = img_gauss(model)
+  model = img_Crop(model)
   model = tf.keras.layers.experimental.preprocessing.Resizing(241,241)(model)
   model = EfficientNetB0(include_top=False, input_tensor=inputs, weights='imagenet')
   model.trainable=False
