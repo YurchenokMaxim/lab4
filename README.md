@@ -77,7 +77,7 @@
   5. размер 500x500  тренировка
   6. размер 500x500  валидация
   
-  ![легендаИ](https://github.com/YurchenokMaxim/lab4/blob/main/4.png)
+  ![легендаИ](https://github.com/YurchenokMaxim/lab4/blob/main/picture.png)
   
   ***График точности***
   
