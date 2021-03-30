@@ -33,18 +33,20 @@
   
   ***Случай манипуляций с яркостью и контрастом***
   
+  Для каждого канала этот слой вычисляет среднее значение пикселей изображения в канале, а затем настраивает каждый компонент x каждого пикселя на (x - mean) * contrast_factor + mean.
+  
   ![контраст](https://github.com/YurchenokMaxim/lab4/blob/main/2.png)
   
   ![яркость](https://github.com/YurchenokMaxim/lab4/blob/main/6.png)
   
   *Легенда*
   
-  1. 0.5 0.5 тренировка
-  2. 0.5 0.5 валидация
-  3. 0.3 0.7 тренировка
-  4. 0.3 0.7 валидация
-  5. 0.3 0.3тренировка
-  6. 0.3 0.3валидация
+  1. contrast_factor=0.5 и delta=0.5 тренировка
+  2. contrast_factor=0.5 и delta=0.5 валидация
+  3. contrast_factor=0.7 и delta=0.3 тренировка
+  4. contrast_factor=0.7 и delta=0.3 валидация
+  5. contrast_factor=0.3 и delta=0.3 тренировка
+  6. contrast_factor=0.3 и delta=0.3 валидация
   
   ![легендаЯК](https://github.com/YurchenokMaxim/lab4/blob/main/%D0%BB%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0CB.png)
   
@@ -55,6 +57,8 @@
   ***График потерь***
   
   ![график 2.2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossCB.svg)
+  
+  По итогам опыта наилучший результат показали параметры contrast_factor=0.7 и delta=0.3, т.к. точность на валидации оказалась выше на 0.2%, сходимость же на 4 эпохи была также лучше.
   
   ***Случай использования случайной части изображения***
   
