@@ -77,15 +77,15 @@
   5. размер 100х100  тренировка
   6. размер 100х100  валидация
   
-  ![легендаИ]()
+  ![легендаИ](https://github.com/YurchenokMaxim/lab4/blob/main/4.png)
   
   ***График точности***
   
-  ![график 3.1]()
+  ![график 3.1](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_categorical_accuracyP.svg)
   
   ***График потерь***
   
-  ![график 3.2]()
+  ![график 3.2](https://github.com/YurchenokMaxim/lab4/blob/main/epoch_lossP.svg)
   
   По итогам графиков лучший результат был у параметров размера 100х100, т.к. точность выше на 0.3%, несмотря на то, что сходимость хуже на одну эпоху.
   
