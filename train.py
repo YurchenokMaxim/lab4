@@ -53,13 +53,6 @@ img_gauss =keras.Sequential(
    ]
 )
 
-img_Crop =keras.Sequential(
-   [
-   tf.keras.layers.experimental.preprocessing.RandomCrop(
-    height=100, width=100, seed=None, name=None
-   )
-   ]
-)
 
 def random_crop(image,label):
       return tf.image.random_crop(image,[RESIZE_TO, RESIZE_TO, 3]),label
@@ -94,7 +87,6 @@ def build_model():
   model = img_rotate(inputs)
   model = img_contrast(model)
   model = img_gauss(model)
-  model = img_Crop(model)
   model = tf.keras.layers.experimental.preprocessing.Resizing(241,241)(model)
   model = EfficientNetB0(include_top=False, input_tensor=inputs, weights='imagenet')
   model.trainable=False
