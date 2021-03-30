@@ -56,7 +56,7 @@ img_gauss =keras.Sequential(
 img_Crop =keras.Sequential(
    [
    tf.keras.layers.experimental.preprocessing.RandomCrop(
-    height=241, width=241, seed=None, name=None
+    height=100, width=100, seed=None, name=None
    )
    ]
 )
@@ -68,7 +68,7 @@ def parse_proto_example(proto):
   example = tf.io.parse_single_example(proto, keys_to_features)
   example['image'] = tf.image.decode_jpeg(example['image/encoded'], channels=3)
   example['image'] = tf.image.convert_image_dtype(example['image'], dtype=tf.uint8)
-  example['image'] = tf.image.resize(example['image'], tf.constant([341, 341]))
+  example['image'] = tf.image.resize(example['image'], tf.constant([RESIZE_TO, RESIZE_TO]))
   return example['image'], tf.one_hot(example['image/label'], depth=NUM_CLASSES)
 
 
@@ -90,6 +90,7 @@ def build_model():
   model = img_contrast(inputs)
   model = img_gauss(inputs)
   model = img_Crop(inputs)
+  model = tf.keras.layers.experimental.preprocessing.Resizing(241,241)(model)
   model = EfficientNetB0(include_top=False, input_tensor=inputs, weights='imagenet')
   model.trainable=False
   model = tf.keras.layers.GlobalAveragePooling2D()(model.output)
