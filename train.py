@@ -87,7 +87,6 @@ def build_model():
   model = img_rotate(inputs)
   model = img_contrast(model)
   model = img_gauss(model)
-  model = tf.keras.layers.experimental.preprocessing.Resizing(241,241)(model)
   model = EfficientNetB0(include_top=False, input_tensor=inputs, weights='imagenet')
   model.trainable=False
   model = tf.keras.layers.GlobalAveragePooling2D()(model.output)
