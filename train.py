@@ -31,7 +31,7 @@ TRAIN_SIZE = 12786
 img_rotate =keras.Sequential(
    [
     tf.keras.layers.experimental.preprocessing.RandomRotation(
-    factor= 0.3, fill_mode='reflect', interpolation='bilinear',
+    factor= 0.5, fill_mode='reflect', interpolation='bilinear',
     seed=None, name=None, fill_value=0.0
 )
    ]
